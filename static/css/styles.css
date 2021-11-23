@@ -1,0 +1,139 @@
+
+div#head div{
+  display:inline-block;
+  background-color : #7A9FAA;
+
+  ;
+}
+div#head div.headright{
+  vertical-align:top;
+  width :83%;
+  height:120px
+
+
+}
+div#head div.headright h1{ color : white;
+    text-align:center;
+    margin:5px
+}
+div#head div.headright p{
+  color:black;
+  font-size:1.3em;
+  font-style:italic;
+  font-family : sherif;
+  padding-left:100px;
+  margin:10px
+}
+
+div#body div{
+  display:inline-block;
+
+}
+div#body div.bodyleft{
+  vertical-align:top;
+  margin:15px;
+  width:50%;
+  background-color:#7A9FAA;
+  border-radius : 8px;
+}
+div#body{
+  padding-left:40px
+}
+div#body div.bodyright{
+  vertical-align:top;
+  margin:15px;
+  width:45%;
+  background-color:#7A9FAA;
+  border-radius : 8px;
+}
+
+div#body div.bodyleft{
+}
+
+div#body div.bodyright h2{
+  padding-left:10px}
+
+div#body div.bodyright h3.OK{
+  color:green;
+  font-weight:bold;
+  text-align: center;
+  margin:16px
+}
+div#body div.bodyright h3.NOK{
+  font-weight:bold;
+  color:red;
+  text-align: center;
+  margin:16px
+}
+div#body div.bodyright p.p1{
+  font-style:italic;
+  color:white;
+  padding-left:10px
+}
+div#body div.bodyright p.data{
+  font-size:0.9em;
+  margin:0px
+}
+div#body div.bodyright img{
+padding-left : 200px;
+height:140px
+
+}
+
+body {
+  background-color:slategray;
+  font-family : sans-serif;}
+
+
+label {
+  font-size:0.9em;
+  font-weight: bold;
+  padding-left:5px;
+  margin:1px
+
+}
+
+label.label_radio{
+  font-size:0.8em;
+  font-style:italic;
+  font-weight:normal;
+  padding-left:1px
+}
+input{
+  margin-left:15px
+}
+
+input.txt{
+  font-size:1em;
+  font-style:italic;
+  border-radius: 5px;
+  background-color:#C0CBCE;
+  width:300px;
+  margin-left:10px
+}
+input:focus {
+  border :solid 5px #2E3334;
+  outline:none
+}
+
+#pred_boutton{
+  background-color: #2E3334;
+  width:200px;
+  height:25px;
+  margin:20px;
+  color:white;
+  font-size:1em;
+  float : right;
+}
+
+#pred_boutton:hover{
+  background-color :#59BFDD;
+  cursor : pointer
+}
+
+a{
+  color:white;
+  opacity :0.5;
+  float: right;
+  margin-top:10px
+}

@@ -1,0 +1,16 @@
+{%extends "mybase.html"%}
+{%block title%}accepted{% endblock %}
+
+{% block result%}
+<p class=p1>Les paramètres renseignés :</p>
+{%for k in display.items():%}
+<ul>
+  <li><p class=data>{{k[0]}}  : {{k[1]}}</p></li>
+</ul>
+{%endfor%}
+<h3 class=OK>Félicitations, vous pouvez avoir le crédit</h3>
+<img src="static\accepté.jpg">
+<form class="" action="/home" method="post">
+<input class ="boutton" type="submit" id="pred_boutton"  value="INITIALISER">
+</form>
+{%endblock%}

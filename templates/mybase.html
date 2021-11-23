@@ -1,0 +1,92 @@
+<! DOCTYPE html>
+<html>
+  <head>
+    <title>{%block title%}{%endblock%}
+</title>
+    <link rel="stylesheet" type="text/css" href="static\css\styles.css">
+  </head>
+  <body>
+    <!--introduction-->
+      <div id="head">
+        <div class="headleft">
+          <img src="static\mon_image.jpg" alt="Mon image de test" height=120>
+        </div>
+        <div class="headright">
+          <h1> Prediction de crédit </h1>
+              <p id ="introduction">
+                Cette application vous permettra en fonction de vos conditions de savoir si vous pourrez avoir un crédit ou non...!  </p>
+                <a href="https://github.com/HamzaOulaarbi?tab=repositories"target = "Blank" > Lien vers le code </a>
+        </div>
+      </div>
+    <!--Pied de page-->
+    <div id="body">
+      <div class="bodyleft">
+        <h2>Les paramètres :</h2>
+        <form action="/prediction" method="post">
+            <label for="sexe">Sexe :</label>
+            <br>
+            <input class="rad" type="radio" id="Hom" name="sexe" value="1" checked>
+            <label class="label_radio" for="Hom">Homme</label>
+            <br>
+            <input class="rad" type="radio" id="Fem" name="sexe" value="0">
+            <label class="label_radio" for="Fem">Femme</label>
+            </p>
+            <label for="married">Mariée(e) ? :</label>
+            <br>
+            <input class="rad" type="radio" id="married" name="mariage" value="1" checked>
+            <label class="label_radio" for="married">Oui</label>
+            <br>
+            <input class="rad" type="radio" id="not_married" name="mariage" value="0">
+            <label class="label_radio" for="not_married">Non</label>
+            </p>
+            <label for="enfant">Enfants ? :</label>
+            <br>
+            <input class="rad" type="radio" id="enf" name="enfant" value="0" checked >
+            <label class="label_radio" for="enfant">Aucun</label>
+            <br>
+            <input class="rad" type="radio" id="enf" name="enfant" value="1">
+            <label class="label_radio" for="enfant">Un</label>
+            <br>
+            <input class="rad" type="radio" id="enf" name="enfant" value="2">
+            <label class="label_radio" for="enfant">Deux</label>
+            <br>
+            <input class="rad" type="radio" id="enf" name="enfant" value="3">
+            <label class="label_radio" for="enfant">Trois ou plus</label>
+            </p>
+
+            <label for="enfant">Avez vous déjà eu un crédit?</label>
+            <br>
+            <input class="rad" type="radio" id="Histcredit" name="Histcredit" value="1" checked>
+            <label class="label_radio" for="Histcredit">Oui</label>
+            <br>
+            <input class="rad" type="radio" id="Histcredit" name="Histcredit" value="0">
+            <label class="label_radio" for="Histcredit">Non</label>
+            </p>
+
+            <label for="income">Revenu mensuel en $:</label>
+            <br>
+            <input class="txt" type="text" id="income" name="income" value="0" required>
+            <br>
+            <label for="income_co">Revenu mensuel du co_demandeur en $: </label>
+            <br>
+            <input class="txt" type="text" id="income_co" name="income_co" value="0" required>
+            <br>
+            <label for="loanamont">Montant du prêt en K$ : </label>
+            <br>
+            <input class="txt" type="text" id="loanamont" name="loanamont" value="0" required>
+            <br>
+            <input class ="boutton" type="submit" id="pred_boutton"  value="SOUMETTRE">
+        </form>
+        </br>
+      </div>
+
+      <div class="bodyright">
+        <h2>Résultat de la prédiction : </h2>
+        {% block result%}{%endblock%}
+      </div>
+    </div>
+<!--Pied de page-->
+  <footer>
+  </footer>
+</body>
+</html>
