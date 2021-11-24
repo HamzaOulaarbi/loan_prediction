@@ -18,7 +18,7 @@ def predfunc():
         col=['Sexe','Marié(e)','Enfant','Credit_History','Revenu1 ($)','Revenu2 ($)', 'Montant(K$)' ]
         for x in request.form.items():
             l.append(float(x[1]))
-        clf = pickle.load(open(r'static\my_model.sav', 'rb'))
+        clf = pickle.load(open('mon_model/my_model.sav', 'rb'))
         pred=clf.predict(np.array(l).reshape(1,-1))
         df=A=pd.DataFrame(np.array(l).reshape(1,-1),columns=col)
         dsexe={1:'Homme',0:'Femme'}
