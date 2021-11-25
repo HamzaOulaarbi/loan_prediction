@@ -23,8 +23,8 @@ def predfunc():
         df=A=pd.DataFrame(np.array(l).reshape(1,-1),columns=col)
         dsexe={1:'Homme',0:'Femme'}
         dmarried= {1:'Oui',0:"Non"}
-        denfant={0:'Un',1:'Un',2:'Deux',3:'Trois ou plus'}
-        dhistcredit={0:'Oui',1:'Non'}
+        denfant={0:'Aucun',1:'Un',2:'Deux',3:'Trois ou plus'}
+        dhistcredit={0:'Non',1:'Oui'}
         df['Sexe'].replace(dsexe,inplace=True)
         df['Marié(e)'].replace(dmarried,inplace=True)
         df['Enfant'].replace(denfant,inplace=True)
