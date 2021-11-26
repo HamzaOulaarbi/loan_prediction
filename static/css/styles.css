@@ -1,28 +1,35 @@
 
-div#head div{
-  display:inline-block;
+div#head {
   background-color : #7A9FAA;
-
-  ;
+  text-align:center;
+  height :125
 }
-div#head div.headright{
-  vertical-align:top;
-  width :83%;
-  height:120px
+div#head  img{
+  float:left}
+
+div#head h1{
+color : white;
+text-align:center;
+margin:10px;
+padding-top:10px
+}
 
 
-}
-div#head div.headright h1{ color : white;
-    text-align:center;
-    margin:5px
-}
-div#head div.headright p{
+div#head p{
   color:black;
   font-size:1.3em;
   font-style:italic;
   font-family : sherif;
   padding-left:100px;
   margin:10px
+}
+
+body {
+  background-color:slategray;
+  font-family : sans-serif;}
+div#body {
+  justify-content: center;
+  display:flex;
 }
 
 div#body div{
@@ -32,23 +39,20 @@ div#body div{
 div#body div.bodyleft{
   vertical-align:top;
   margin:15px;
-  width:50%;
-  background-color:#7A9FAA;
-  border-radius : 8px;
-}
-div#body{
-  padding-left:40px
-}
-div#body div.bodyright{
-  vertical-align:top;
-  margin:15px;
-  width:45%;
+  width:60%;
   background-color:#7A9FAA;
   border-radius : 8px;
 }
 
-div#body div.bodyleft{
+div#body div.bodyright{
+  width:40%;
+  margin:15px;
+  background-color:#7A9FAA;
+  border-radius : 8px;
 }
+
+div#body div.bodyleft h2{
+  padding-left:10px}
 
 div#body div.bodyright h2{
   padding-left:10px}
@@ -61,7 +65,7 @@ div#body div.bodyright h3.OK{
 }
 div#body div.bodyright h3.NOK{
   font-weight:bold;
-  color:red;
+  color:#C03E59;
   text-align: center;
   margin:16px
 }
@@ -80,9 +84,7 @@ height:140px
 
 }
 
-body {
-  background-color:slategray;
-  font-family : sans-serif;}
+
 
 
 label {
